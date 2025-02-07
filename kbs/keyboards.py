@@ -36,7 +36,7 @@ def taskskbbuilder(userid, finalbutton):
     builder = ReplyKeyboardBuilder()
     for i in range(1, data.getCurNumOfTask(userid)):
            builder.add(KeyboardButton(text=str(i)))
-    builder.add(KeyboardButton(text = f"{finalbutton}✅"))
+    builder.add(KeyboardButton(text = f"{finalbutton}"))
     builder.adjust(4)
     return builder.as_markup(resize_keyboard=True)
 
